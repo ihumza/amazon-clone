@@ -2,6 +2,8 @@ import './App.css';
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Header from './Header';
 import Home from './Home';
+import Checkout from './Checkout';
+import Login from './Login';
 
 function App() {
   return (
@@ -18,14 +20,15 @@ function App() {
           <Route path="/login"
             element={
               <>
-                <h1>Login Page</h1>
+                <Header />
+                <Login />
               </>
             } />
           <Route path="/checkout"
             element={
               <>
                 <Header />
-                <h1>Checkout Page</h1>
+                <Checkout />
               </>
             } />
         </Routes>
